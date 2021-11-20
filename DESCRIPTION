@@ -6,7 +6,7 @@ Authors@R:
            family = "Huang",
            role = c("aut", "cre"),
            email = "ritalian@student.ubc.ca")
-Description: Give `missing_prop_detect()` function to calculate the proportion of missing values for each column,and output the result of columns having NA existed.
+Description: Give `missing_prop_detect()` function to calculate the proportion of missing values for each column and output the result of columns having NA existed.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
