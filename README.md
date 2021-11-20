@@ -13,7 +13,7 @@ Version: 0.1.0
 <!-- badges: end -->
 
 The goal of `Rpackage.missingDetect` is to calculate the proportion of
-missing values for each column in a dataset,and output the result of
+missing values for each column in a dataset and output the result of
 columns having NA existed.
 
 ## Installation
@@ -40,7 +40,7 @@ missing_prop_detect(palmerpenguins::penguins)
 #> 1        0.00581       0.00581           0.00581     0.00581 0.0320
 ```
 
-This package is special because it also works on a input of dataframe:
+This package can also work on a input of dataframe:
 
 ``` r
 df<- as.data.frame(palmerpenguins::penguins)
