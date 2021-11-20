@@ -8,6 +8,8 @@ test_that("inapplicable input gives error", {
   expect_error(missing_prop_detect(1))
   expect_error(missing_prop_detect(empty_data), "empty tibble/dataframes!")
 })
+rm('empty_data')
+
 
 test_that("output value in the range (0.0,1.0] ",{
   expect_gt(min(missing_prop_detect(palmerpenguins::penguins)),0.0)
@@ -28,5 +30,6 @@ test_that("correct detection and calculation",{
   expect_setequal(colnames(missing_prop_detect(palmerpenguins::penguins)),NA_cols)
   expect_equal(missing_prop_detect(palmerpenguins::penguins)$sex,sex_NA_prop)
 })
-
+rm('NA_cols')
+rm('sex_NA_prop')
 

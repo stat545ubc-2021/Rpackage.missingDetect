@@ -4,11 +4,13 @@
 # missingDetect
 
 <!-- badges: start -->
-<!-- badges: end -->
+
+Title: Detect the proportion of missing values in columns of
+tibble/dataframe Version: 0.1.0 <!-- badges: end -->
 
 The goal of missingDetect is to calculate the proportion of missing
-values for each column,and output the result of columns having NA
-existed.
+values for each column in a dataset,and output the result of columns
+having NA existed.
 
 ## Installation
 

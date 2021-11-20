@@ -12,7 +12,6 @@
 
 
 missing_prop_detect <- function(x) {
-  #where <- utils::globalVariables("where")
   if(!(any(class(x) %in% c("tbl","data.frame","spec_tbl_df", "tbl_df")))) {
     stop('sorry, this function only works for tibbles and dataframes!\n',
          'You have provided an object of class: ', class(x))}
