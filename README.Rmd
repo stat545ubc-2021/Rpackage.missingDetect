@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Rpackage.missingDetect
+
+<!-- badges: start -->
+
+Title: Detect the proportion of missing values in columns of tibble/dataframe
+
+Version: 0.1.0
+
+<!-- badges: end -->
+
+The goal of `Rpackage.missingDetect` is to calculate the proportion of missing values for each column in a dataset,and output the result of columns having NA existed.
+
+## Installation
+
+`Rpackage.missingDetect` is not yet on CRAN. You can download this development version from [GitHub](https://github.com/) using the following R command:
+
+``` r
+devtools::install_github("stat545ubc-2021/Rpackage.missingDetect")
+```
+
+## Example
+
+This is a basic example which shows you how to detect data missing problems of a tibble dataset:
+
+```{r example}
+library(Rpackage.missingDetect)
+missing_prop_detect(palmerpenguins::penguins)
+```
+
+This package is special because it also works on a input of dataframe:
+
+```{r cars}
+df<- as.data.frame(palmerpenguins::penguins)
+missing_prop_detect(df)
+```
+
