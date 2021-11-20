@@ -6,7 +6,11 @@
 <!-- badges: start -->
 
 Title: Detect the proportion of missing values in columns of
-tibble/dataframe Version: 0.1.0 <!-- badges: end -->
+tibble/dataframe
+
+Version: 0.1.0
+
+<!-- badges: end -->
 
 The goal of missingDetect is to calculate the proportion of missing
 values for each column in a dataset,and output the result of columns
@@ -25,7 +29,7 @@ And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("stat545ubc-2021/Rpackage_MenghongHuang")
+devtools::install_github("stat545ubc-2021/Rpackage_MenghongHuang/missingDetect")
 ```
 
 ## Example
